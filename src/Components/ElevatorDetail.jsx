@@ -106,7 +106,9 @@ const ElevatorDetail = ({ elevator, onClose, onToggleBlock, onSendCall, onUpdate
           <DetailCard title="Current Floor" value={elevator.currentFloor} icon={<IconArrowUp className="text-indigo-500 w-6 h-6" />} />
           <DetailCard title="Direction" value={elevator.direction} icon={elevator.direction === 'UP' ? <IconArrowUp className="text-green-500 w-6 h-6 animate-bounce-up" /> : elevator.direction === 'DOWN' ? <IconArrowDown className="text-red-500 w-6 h-6 animate-bounce-down" /> : <IconClock className="text-blue-500 w-6 h-6" />} />
           <DetailCard title="Door State" value={elevator.doorState} icon={elevator.doorState === 'OPEN' ? <IconDoorOpen className="text-blue-500 w-6 h-6 animate-pulse" /> : <IconDoorClosed className="text-gray-500 w-6 h-6" />} />
-          <DetailCard title="Speed" value={`${elevator.speed_mps.toFixed(1)} m/s`} icon={<IconSpeed className="w-6 h-6 text-purple-500" />} />
+console.log("Elevator Speed:", elevator.speed_mps); // Log the speed data
+
+<DetailCard title="Speed" value={elevator.speed_mps ? `${elevator.speed_mps.toFixed(1)} m/s` : "N/A"} icon={<IconSpeed className="w-6 h-6 text-purple-500" />} />
           <DetailCard title="Load" value={`${elevator.car_load_kg.toFixed(1)} kg`} icon={<IconLoad className="w-6 h-6 text-yellow-500" />} />
           <DetailCard title="Health Score" value={`${elevator.predictive_health_score_pct.toFixed(1)}%`} icon={<IconHealth className="w-6 h-6" healthPct={elevator.predictive_health_score_pct} />} />
         </div>
