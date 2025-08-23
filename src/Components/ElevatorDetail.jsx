@@ -1,4 +1,4 @@
-// src/components/ElevatorDetail.js
+
 import React from 'react';
 import { Line, Doughnut } from 'react-chartjs-2';
 import DetailCard from './DetailCard';
