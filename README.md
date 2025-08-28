@@ -1,12 +1,33 @@
-# React + Vite
+Elevator Simulation App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based Elevator Simulation Project that demonstrates how elevators handle multiple requests using direction logic and queue management. The project is styled with Tailwind CSS, uses React Icons for UI enhancements, and integrates Firestore for storing and retrieving request data.
 
-Currently, two official plugins are available:
+🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Netlify Deployment: Elevator App
 
-## Expanding the ESLint configuration
+GitHub Repository: FrontendElevator
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+
+⚛️ React.js – UI development and state management
+
+🎨 Tailwind CSS – Styling and responsive design
+
+🔥 Firestore (Firebase) – Request storage and data persistence
+
+⭐ React Icons – Elevator controls and floor indicators
+
+✨ Features
+
+🏢 Floor Request Handling – Users can request the elevator from any floor.
+
+⬆️⬇️ Direction Logic – Elevator decides movement based on requests.
+
+⏱️ Step-by-Step Simulation – Moves floor by floor with timing delays.
+
+📊 Firestore Integration – Stores requests for persistence and future analytics.
+
+🎛️ Interactive UI – Floors, elevator, and requests displayed dynamically.
+
+📱 Responsive Design – Works across desktop and mobile screens.
